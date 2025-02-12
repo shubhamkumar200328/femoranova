@@ -1,14 +1,12 @@
 "use client"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
 import Link from "next/link"
 
 export default function Login() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
-  const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -22,6 +20,7 @@ export default function Login() {
       // If successful, redirect to dashboard or home
       // router.push('/dashboard');
     } catch (err) {
+      console.log(err)
       setError("Failed to login. Please check your credentials.")
     }
   }

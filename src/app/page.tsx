@@ -8,11 +8,13 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       {/* Navbar */}
       <Navbar />
-
       {/* Hero Section */}
       <section className="flex-grow flex items-center justify-center bg-gradient-to-r from-purple-600 to-pink-600 text-white py-20">
         <div className="text-center max-w-2xl">
-          <h1 className="text-5xl font-bold mb-6">Welcome to Femora</h1>
+          <h1 className="text-5xl font-bold mb-6">
+            Welcome to Femora&apos;s World
+          </h1>{" "}
+          {/* Fixed unescaped character */}
           <p className="text-xl mb-8">
             Empowering women through safety, health, and community. Join us in
             creating a better future for every woman.
@@ -44,7 +46,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <FaShieldAlt className="text-pink-500 text-4xl mb-3" />
               <h3 className="text-xl font-semibold text-neutral-950 my-1">
-                Women's Safety
+                Women&apos;s Safety
               </h3>
               <p className="text-gray-600">
                 Ensuring security with smart technology.
@@ -53,7 +55,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <FaHeartbeat className="text-red-500 text-4xl mb-3" />
               <h3 className="text-xl font-semibold text-neutral-950 my-1">
-                Women's Health
+                Women&apos;s Health
               </h3>
               <p className="text-gray-600">
                 Providing health insights and resources.
@@ -62,7 +64,7 @@ export default function Home() {
             <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
               <FaUsers className="text-purple-500 text-4xl mb-3" />
               <h3 className="text-xl font-semibold  text-neutral-950 my-1">
-                Women's Empowerment
+                Women&apos;s Empowerment
               </h3>
               <p className="text-gray-600">
                 Fostering education and opportunities.

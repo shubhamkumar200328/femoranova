@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
 import Link from "next/link"
 
 export default function Register() {
@@ -12,7 +11,6 @@ export default function Register() {
     confirmPassword: "",
   })
   const [error, setError] = useState("")
-  const router = useRouter()
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -40,6 +38,7 @@ export default function Register() {
       // If successful, redirect to login
       // router.push('/login');
     } catch (err) {
+      console.log(err)
       setError("Failed to register. Please try again.")
     }
   }
