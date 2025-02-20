@@ -28,7 +28,7 @@ export default function Sos() {
   }
 
   return (
-    <>
+    <div className={style.sosbody}>
       <div className={style.container1}>
         <h1>Hi, this is explore section.</h1>
 
@@ -83,6 +83,6 @@ export default function Sos() {
         </div>
       </div>
       <ToastContainer /> {/* for notification alert */}
-    </>
+    </div>
   )
 }
