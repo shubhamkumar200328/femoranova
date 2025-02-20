@@ -21,7 +21,7 @@ export default function Home() {
           </p>
           <div className="space-x-4">
             <Link
-              href="/signup"
+              href="/explore"
               className="bg-white text-purple-600 px-6 py-3 rounded-full font-semibold hover:bg-purple-50 transition duration-300"
             >
               Get Started
@@ -83,7 +83,7 @@ export default function Home() {
             and empowered life.
           </p>
           <Link
-            href="/signup"
+            href="/register"
             className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition duration-300"
           >
             Sign Up Now

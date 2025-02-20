@@ -1,0 +1,86 @@
+body {
+  background-color: #ffc0d9;
+  color: black;
+}
+
+.container1 {
+  margin: 80px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.sosDiv {
+  color: white;
+  background-color: #ff90bc;
+  margin: 5px auto;
+  max-width: 200px;
+  min-height: 200px;
+  border: 15px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth transition for the sosDiv */
+  position: relative; /* Add relative positioning to contain the smaller divs */
+}
+
+.sosPara {
+  margin: auto;
+  font-size: 50px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pressPara {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Smaller divs that will appear around sosDiv */
+.sosSide {
+  position: absolute;
+  width: 45%;
+  height: 25%;
+  padding: 2px;
+  background-color: #8acdd7;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 15px 15px 15px;
+  transition: all 0.5s ease; /* Smooth transition for movement */
+  opacity: 0; /* Start hidden */
+  pointer-events: none; /* Prevent interaction when hidden */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the divs initially */
+}
+
+/* Transition for each smaller div */
+.show1 {
+  opacity: 1;
+  transform: translate(250px, -50%); /* Move to the right */
+}
+
+.show2 {
+  opacity: 1;
+  transform: translate(400px, -50%); /* Move further to the right */
+  transition-delay: 0.3s; /* Delay the second div */
+}
+
+.show3 {
+  opacity: 1;
+  transform: translate(550px, -50%); /* Move even further to the right */
+  transition-delay: 0.6s; /* Delay the third div */
+}
+
+.clicked {
+  transform: scale(
+    1.2
+  ); /* Optional effect to make sosDiv scale up slightly when clicked */
+}
