@@ -95,9 +95,8 @@
 
 .column3 {
   width: 40%;
-  /* background-color: lightcoral; */
   padding: 10px;
-  position: relative; /* Ensure absolute positioning inside this container */
+  position: relative; /* Ensures child elements with absolute positioning are relative to this container */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,15 +107,15 @@
   border: 2px solid white;
   border-radius: 0px 21px 21px 21px;
   padding: 10px;
-  position: absolute;
-  /* top: 10%;
-  left: 50%; */
-  transform: translate(-40%, -20%); /* Perfect centering */
+  position: absolute; /* Ensure it positions relative to `.column3` */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .inputShow {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on show */
+  transform: translate(-50%, -5%) scale(1.05); /* Slight zoom effect */
 }

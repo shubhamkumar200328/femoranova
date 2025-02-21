@@ -1,7 +1,11 @@
-export default function explore() {
+import style from "@/app/explore/empowerment/empowerment.module.css"
+
+export default function Empowerment() {
   return (
     <>
-      <h1>Hi,</h1>
+      <div className={style.empowermentContainer}>
+        <h1>Hi, This is Empowerment section.</h1>
+      </div>
     </>
   )
 }
