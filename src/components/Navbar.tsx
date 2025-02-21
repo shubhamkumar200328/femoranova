@@ -32,6 +32,12 @@ export default function Navbar() {
           <Link href="/login" className="text-gray-700 hover:text-purple-600">
             login
           </Link>
+          <Link
+            href="/explore/sosdummy"
+            className="text-gray-700 hover:text-purple-600"
+          >
+            sosdummy
+          </Link>
         </div>
       </div>
     </nav>

@@ -1,14 +1,12 @@
 .container {
-  position: relative;
   display: flex;
   width: 100%;
-  padding: 80px 20px 30px 30px;
+  padding-top: 80px;
 }
 .column1 {
   width: 40%;
   /* background-color: lightblue; */
   padding: 10px;
-  padding: 20px;
 }
 
 .column2 {
@@ -104,14 +102,15 @@
 }
 
 .inputsection {
+  text-align: center;
   background-color: #ff90bc;
   border: 2px solid white;
   border-radius: 0px 21px 21px 21px;
   padding: 10px;
   position: absolute;
-  /* top: 10%;
-  left: 50%; */
-  transform: translate(-40%, -20%); /* Perfect centering */
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }

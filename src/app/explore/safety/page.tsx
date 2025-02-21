@@ -1,7 +1,9 @@
-export default function explore() {
+export default function Safety() {
   return (
     <>
-      <h1>Hi,</h1>
+      <div className="safetyContainer bg-[#F9F9E0] text-slate-400">
+        <h2>This is safety conatiner</h2>
+      </div>
     </>
   )
 }

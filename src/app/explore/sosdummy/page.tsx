@@ -1,10 +1,11 @@
 "use client"
+import Image from "next/image"
+import touch from "@/assets/double-tap.png"
 import { useState } from "react"
 import style from "@/app/explore/sosdummy/sosdummy.module.css"
 import "@/app/explore/sosdummy/sosdummy.css"
 import { ToastContainer, toast } from "react-toastify"
-import Image from "next/image"
-import logo from "@/assets/femoranova_logo.png"
+import Navbar from "@/components/Navbar"
 
 export default function Sos() {
   const [clicked, setClicked] = useState(false)
@@ -33,18 +34,11 @@ export default function Sos() {
 
   return (
     <>
+      <Navbar />
       <div className={style.sosbody}>
         <div className={style.container}>
           <div className={style.column1}>
-            <p className=" text-6xl">Emergency</p>
-            <Image
-              src={logo.src}
-              alt="logo"
-              width={250}
-              height={250}
-              priority
-            />
-            {/* <Button variant="outline">Button</Button> */}
+            <p>Emergency</p>
           </div>
           <div className={style.column2}>
             <div
