@@ -1,6 +1,4 @@
 "use client"
-import Image from "next/image"
-import touch from "@/assets/double-tap.png"
 import { useState } from "react"
 import style from "@/app/explore/sosdummy/sosdummy.module.css"
 import "@/app/explore/sosdummy/sosdummy.css"
