@@ -4,6 +4,8 @@ import style from "@/app/explore/sosdummy/sosdummy.module.css"
 import "@/app/explore/sosdummy/sosdummy.css"
 import { ToastContainer, toast } from "react-toastify"
 import Navbar from "@/components/Navbar"
+import Image from "next/image"
+import logo from "@/assets/femoranova_logo.png"
 
 export default function Sos() {
   const [clicked, setClicked] = useState(false)
@@ -36,33 +38,37 @@ export default function Sos() {
       <div className={style.sosbody}>
         <div className={style.container}>
           <div className={style.column1}>
-            <p>Emergency</p>
+            <p className=" text-6xl mb-5">Emergency</p>
+            <Image
+              src={logo.src}
+              alt="logo"
+              width={250}
+              height={250}
+              priority
+            />
+            {/* <Button variant="outline">Button</Button> */}
           </div>
           <div className={style.column2}>
             <div
               className={`${style.sosDiv} ${clicked ? style.clicked : ""}`}
               onClick={handleClickFunctions}
             >
-              <div className="transiDiv">
-                <p className={style.sosPara}>SOS</p>
-                {/* Smaller divs that appear when clicked */}
-                <div
-                  className={`${style.sosSide} ${clicked ? style.show1 : ""}`}
-                >
-                  Father
-                </div>
-                <div
-                  className={`${style.sosSide} ${clicked ? style.show2 : ""}`}
-                >
-                  Mother
-                </div>
-                <div
-                  className={`${style.sosSide} ${clicked ? style.show3 : ""}`}
-                >
-                  Bro/Frnd
-                </div>
+              <p className={style.sosPara}>SOS</p>
+
+              {/* Smaller divs that appear when clicked */}
+              <div className={`${style.sosSide} ${clicked ? style.show1 : ""}`}>
+                Father
+              </div>
+              <div className={`${style.sosSide} ${clicked ? style.show2 : ""}`}>
+                Mother
+              </div>
+              <div className={`${style.sosSide} ${clicked ? style.show3 : ""}`}>
+                Bro/Frnd
               </div>
             </div>
+            <p className=" mt-9 text-4xl text-center">
+              Press ☝️ for <label className=" text-purple-400">Help</label>
+            </p>
           </div>
           <div className={style.column3}>
             {isInputVisible && (

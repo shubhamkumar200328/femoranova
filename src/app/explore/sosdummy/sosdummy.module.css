@@ -1,17 +1,21 @@
 .container {
+  position: relative;
   display: flex;
   width: 100%;
-  padding-top: 80px;
+  min-height: 300px;
+  padding: 80px 20px 30px 30px;
+  margin: 0 auto;
 }
 .column1 {
   width: 40%;
   /* background-color: lightblue; */
-  padding: 10px;
+  padding: 20px;
 }
 
 .column2 {
   width: 20%;
   /* background-color: lightgreen; */
+  align-items: center;
   padding: 10px;
 }
 
@@ -25,6 +29,7 @@
   border-radius: 50%;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -34,12 +39,8 @@
 
 .sosPara {
   margin: auto;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .pressPara {
@@ -93,22 +94,20 @@
 
 .column3 {
   width: 40%;
-  /* background-color: lightcoral; */
   padding: 10px;
-  position: relative; /* Ensure absolute positioning inside this container */
+  position: relative; /* Ensures child elements with absolute positioning are relative to this container */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .inputsection {
-  text-align: center;
   background-color: #ff90bc;
   border: 2px solid white;
   border-radius: 0px 21px 21px 21px;
   padding: 10px;
-  position: absolute;
-  top: 100%;
+  position: absolute; /* Ensure it positions relative to `.column3` */
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Perfect centering */
   opacity: 0;
@@ -117,5 +116,5 @@
 
 .inputShow {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1.05); /* Slight zoom effect on show */
+  transform: translate(-50%, -5%) scale(1.05); /* Slight zoom effect */
 }

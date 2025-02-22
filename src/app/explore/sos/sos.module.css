@@ -2,18 +2,20 @@
   position: relative;
   display: flex;
   width: 100%;
+  min-height: 300px;
   padding: 80px 20px 30px 30px;
+  margin: 0 auto;
 }
 .column1 {
   width: 40%;
   /* background-color: lightblue; */
-  padding: 10px;
   padding: 20px;
 }
 
 .column2 {
   width: 20%;
   /* background-color: lightgreen; */
+  align-items: center;
   padding: 10px;
 }
 
@@ -27,6 +29,7 @@
   border-radius: 50%;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -36,12 +39,8 @@
 
 .sosPara {
   margin: auto;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .pressPara {
@@ -118,4 +117,9 @@
 .inputShow {
   opacity: 1;
   transform: translate(-50%, -5%) scale(1.05); /* Slight zoom effect */
+}
+
+.imgSos {
+  margin-left: 40px;
+  border-radius: 21px;
 }

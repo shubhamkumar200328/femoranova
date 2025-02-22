@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-6 text-center">
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Femora. All rights reserved.
+          &copy; {new Date().getFullYear()} Femoranova. All rights reserved.
         </p>
         <div className="mt-4 space-x-4">
           <a href="#" className="text-gray-400 hover:text-white">

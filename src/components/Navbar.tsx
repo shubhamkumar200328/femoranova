@@ -10,7 +10,9 @@ export default function Navbar() {
           <Image src={logo.src} alt="logo" width={54} height={54} priority />
           <Link href="/" className="text-2xl font-bold text-purple-600">
             Femora
-            <label className="text-2xl font-bold text-pink-600">nova</label>
+            <label className="text-2xl font-bold text-pink-600 cursor-pointer">
+              nova
+            </label>
           </Link>
         </div>
         <div className="space-x-6">

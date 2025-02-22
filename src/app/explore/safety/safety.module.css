@@ -4,4 +4,18 @@
   min-height: 400px;
   max-width: 100%;
   margin: 0px auto;
+  padding: 1%;
+  text-align: center;
+}
+
+.liSafety {
+  font-size: 35px;
+  border: 2px solid black;
+  border-radius: 11px;
+  padding: 5px 2px;
+  margin: 5px auto;
+}
+
+.imgSafety {
+  border-radius: 21px;
 }
