@@ -4,6 +4,7 @@ import Safety from "@/app/explore/safety/page"
 import Footer from "@/components/Footer"
 import Health from "@/app/explore/health/page"
 import Empowerment from "@/app/explore/empowerment/page"
+import style from "@/app/explore/explore.module.css"
 
 export default function explore() {
   return (
@@ -11,7 +12,7 @@ export default function explore() {
       <Navbar />
       <Sos />
       <hr />
-      <div className="sh flex flex-row">
+      <div className={style.she}>
         <Safety />
         <Health />
         <Empowerment />

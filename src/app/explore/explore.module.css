@@ -1,0 +1,12 @@
+.she {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  border: 1px solid purple;
+  border-radius: 20px;
+  margin: 15px auto;
+  width: 97%;
+  height: auto;
+}

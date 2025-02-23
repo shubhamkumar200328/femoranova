@@ -10,7 +10,10 @@ import sos from "@/assets/sos_girl.webp"
 export default function Sos() {
   const [clicked, setClicked] = useState(false)
 
-  const notify = () => toast.success("Location shared successfully!")
+  const notify = () =>
+    toast.success(
+      "Location has been shared successfully and every 5 min it will share your real time location to the saved person."
+    )
   const notifyEnter = () => toast("Message sended successfully!")
 
   const [isInputVisible, setIsInputVisible] = useState(false)
@@ -66,7 +69,7 @@ export default function Sos() {
               </div>
             </div>
             <p className=" mt-9 text-4xl text-center">
-              Press ☝️ for <label className=" text-purple-400">Help</label>
+              Press ☝️ for <label className=" text-purple-600">Help</label>
             </p>
           </div>
           <div className={style.column3}>

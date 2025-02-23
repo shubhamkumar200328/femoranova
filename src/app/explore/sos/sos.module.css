@@ -1,10 +1,16 @@
+.sosbody {
+  margin-top: 80px;
+}
+
 .container {
   position: relative;
   display: flex;
-  width: 100%;
-  min-height: 300px;
-  padding: 80px 20px 30px 30px;
-  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid purple;
+  border-radius: 20px;
+  margin: 15px auto;
+  width: 97%;
+  height: auto;
 }
 .column1 {
   width: 40%;
